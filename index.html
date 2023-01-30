@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardigan Web</title>
-    <link rel="stylesheet" href="./resources/css/normalize.css">
-    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/normalize.css" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
     <script src="./index.js" defer type="module"></script>
-</head>
-<body>
-    <header>
-        <h1>CARDIGAN WEB</h1>
-    </header>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>CARDIGAN WEB</h1>
+    </header> -->
     <main>
-        <section>
-            <img src="./resources/images/cardigan-web-logo-dark.png" alt="logo">
-        </section>
+      <video autoplay muted loop playsinline id="bgvid">
+        <source src="./resources/videos/hero-background.mp4" type="video/mp4" />
+      </video>
+      <div id="video-overlay"></div>
+      <section id="hero">
+        <img
+          src="./resources/images/cardigan-web-logo-1000-transparent.png"
+          alt="logo"
+        />
+      </section>
+      <section id="mission">
+        <h2>We can help you</h2>
+        <h2>Make a great impression</h2>
+        <p>
+          We are a full-service web design and development studio that
+          specializes in creating professional user-friendly websites for
+          small businesses and ecommerce companies.
+        </p>
+        <div id="mission-container">
+          <div class="card">
+            <img src="./resources/images/mission-design.png" alt="design" />
+            <h3>Design</h3>
+            <p>
+              One-size-fits-all solutions don't work, so we work closely with
+              you to design a website that fits your specific needs, goals and
+              vision.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/mission-develop.png" alt="develop" />
+            <h3>Develop</h3>
+            <p>
+              Our sites are built for all devices and browsers. Ecommerce solutions, blogs, or complex web
+              applications, we have the skills and experience to build it.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./resources/images/mission-impress.png" alt="impress" />
+            <h3>Impress</h3>
+            <p>
+              Over 90% of consumers will judge a business based on the website. 
+              Let us help you make that first impression count.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div id="services-overlay"></div>
+        <h2>OUR SERVICES</h2>
+        <div id="services-container">
+          <div class="service">
+            <img
+              src="./resources/images/website-design.png"
+              alt="website design"
+            />
+            <h3>Website Design</h3>
+            <p>
+              We design websites that are easy to navigate and look great on any
+              device.
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="./resources/images/website-development.png"
+              alt="website development"
+            />
+            <h3>Website Development</h3>
+            <p>
+              We develop websites that are easy to navigate and look great on
+              any device.
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="./resources/images/website-maintenance.png"
+              alt="website maintenance"
+            />
+            <h3>Website Maintenance</h3>
+            <p>
+              We maintain websites that are easy to navigate and look great on
+              any device.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2022 PLACEHOLDER</p>
+      <p>&copy; 2022 PLACEHOLDER</p>
     </footer>
-</body>
+  </body>
 </html>
