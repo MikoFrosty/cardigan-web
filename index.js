@@ -1,5 +1,8 @@
 import debounce from "./resources/javascript/debounce.js";
 
+const overlay = document.querySelector("#video-overlay");
+overlay.style.opacity = "0.7";
+
 /* hide header when scrolling down */
 let prevScrollPos = window.pageYOffset;
 window.addEventListener(
@@ -9,9 +12,9 @@ window.addEventListener(
       let currentScrollPos = window.pageYOffset;
       if (currentScrollPos > 100) {
         if (prevScrollPos > currentScrollPos) {
-          document.querySelector("header").style.top = "0";
+          //document.querySelector("header").style.top = "0";
         } else {
-          document.querySelector("header").style.top = "-200px";
+          //document.querySelector("header").style.top = "-200px";
         }
       }
       prevScrollPos = currentScrollPos;
@@ -20,3 +23,5 @@ window.addEventListener(
     { leading: true, maxWait: 20, trailing: true }
   )
 );
+
+document.querySelector("#hero img").style.opacity = "1";
